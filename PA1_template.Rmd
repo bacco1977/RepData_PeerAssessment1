@@ -118,10 +118,10 @@ avg.step.line <- ggplot(average_steps_by_interval_and_weekday,aes(interval,steps
                  facet_grid(. ~ weekday) +
                  geom_line(size = 1)
 
- dev.copy(png,'figure/Time_Series_Plot_Average_Steps_by_Interval_after_Imputation.png')
- dev.off()
+ 
 avg.step.line  
-
+dev.copy(png,'figure/Time_Series_Plot_Average_Steps_by_Interval_after_Imputation.png')
+ dev.off()
 
 ```
 
