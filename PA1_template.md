@@ -37,7 +37,7 @@ histplot
 ![](PA1_template_files/figure-html/unnamed-chunk-2-1.png) 
 
 ```r
- dev.copy(png,'figure/histo_number_teps_each_day.png')
+ dev.copy(png,'figure/histo_number_steps_each_day.png')
 ```
 
 ```
@@ -211,7 +211,14 @@ avg.step.line <- ggplot(average_steps_by_interval_and_weekday,aes(interval,steps
                  facet_grid(. ~ weekday) +
                  geom_line(size = 1)
 
- dev.copy(png,'figure/Time_Series_Plot_Average_Steps_by_Interval_after_Imputation.png')
+ 
+avg.step.line  
+```
+
+![](PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
+
+```r
+dev.copy(png,'figure/Time_Series_Plot_Average_Steps_by_Interval_after_Imputation.png')
 ```
 
 ```
@@ -227,10 +234,4 @@ avg.step.line <- ggplot(average_steps_by_interval_and_weekday,aes(interval,steps
 ## png 
 ##   2
 ```
-
-```r
-avg.step.line  
-```
-
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
 
